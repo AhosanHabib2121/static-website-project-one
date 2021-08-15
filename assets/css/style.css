@@ -1,0 +1,948 @@
+/*---------------------------------------------------------------------------------------
+									General css-style start here
+-----------------------------------------------------------------------------------------*/
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+	padding-left: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+/*font-family: 'Handlee', cursive;*/
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Roboto', sans-serif;
+}
+/*------------- All-section-header General css use here---------------------*/
+.section-header h1{
+	text-align: center;
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 60px;
+	position: relative;
+}
+.section-header h1::before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 120px;
+	height: 1px;
+	background: #ddd;
+	bottom: 1px;
+	left: calc(50% - 60px);
+}
+.section-header h1::after{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 3px;
+	background: #18d26e;
+	bottom: 0;
+	left: calc(50% - 20px);
+}
+.section-header p{
+	padding: 20px 40px;
+	text-align: center;
+	color: #111010;
+}
+
+/*----------------------------------------------------------------------------------------
+									General css-style end here
+-----------------------------------------------------------------------------------------*/
+/*===============================Header-section start here=========================*/
+/*----navbar .logo img css & js use here--------*/
+.navbar .logo img{
+	width: 110px;
+	height: 80px;
+	border-radius: 50%;
+	transition: .5s;	
+}
+.navbar .black .logo img{
+	width: 80px;
+	height: 68px;
+}
+/*---navbar .logo css use here---*/
+.navbar .logo{
+	float: left;
+}
+/*---navbar css-Responsive design-js use here---*/
+.navbar {
+    padding: 10px 100px;
+   	transition: .6s;	
+}
+.navbar.black{
+	background:#242424c4;
+	height:80px;
+	padding: 10px 50px;
+}
+/*---nav-link & hover use> css-Responsive use here---*/
+.nav-link{
+	color: #fff;
+	margin-right: 4px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 4px;
+	transition: 2s;
+}
+/*---ul li.current .nav-link> css use here---*/
+.nav-link:hover,ul li.current .nav-link{
+	color:#fff;
+	background-color: #484c89 ; 
+}
+/*---Responsive design> css use here---*/
+@media(max-width: 786px){
+	/*---navbar> css-Responsive design-js use here---*/
+	.navbar {
+    	padding: 10px 30px;
+    	background:#242424c4;
+	}
+	/*---nav-link & hover use> css-Responsive use here---*/
+	.nav-link{
+		margin-top: 5px;
+	}
+	/*---bar i>css-Responsive design use here---*/
+	.bar i{
+		color: #fff;
+	}
+	/*--#navbarNav>Responsive design,css use here---*/
+	#navbarNav{
+		background: #000;
+		opacity: 0.7;
+		margin-top: 2px;
+	}
+}
+/*===============================Banner-section start here=========================*/
+/*---#banner>css use here---*/
+#banner{
+	width: 100%;
+	height: 97vh;
+	background-color:rgba(9,10,20,0.8);
+	position: relative;
+}
+/*---carousel-item img>css-Responsive design use here---*/
+.carousel-item img{
+	width: 100%;
+	height: 97vh;
+	opacity: 0.4;
+	
+}
+/*---carousel-caption - h2>css-Responsive design use here---*/
+.carousel-caption{
+	position: absolute;
+	top: 25%;
+	bottom: 0;
+	right: 22%;
+	left: 22%;
+}
+.carousel-caption h2{
+	font-size: 50px;
+	font-family: impact;
+	letter-spacing: 1px;
+	color: #f4f9f9;
+	margin-bottom: 20px;
+}
+/*---B-btn & hover use>css use here---*/
+.B-btn{
+	background-color: #119162;
+	color: #f4f0f0;
+	border:#119162;
+	border-radius: 60px;
+	padding: 8px 30px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+.B-btn:hover{
+	background-color: #ecf0f1 ;
+	color:#119162 ;
+	border:#ecf0f1;
+}
+/*---Responsive design>css use here---*/
+@media(max-width: 786px){
+	/*---carousel-item img>css-Responsive design use here---*/
+	.carousel-item img{
+		height: 140vh;
+	}
+	/*---carousel-caption - h2>css-Responsive design use here---*/
+	.carousel-caption{
+		bottom: 25%;
+	}
+}
+/*===============================Featured-section start here=========================*/
+/*---#featured>css-Responsive-design use here---*/
+#featured{
+	background-color:#000;
+}
+/*---#featured .box>css use here---*/
+#featured .box{
+	 padding: 30px 20px;
+}
+/*---#featured .box-bg>css use here---*/
+#featured .box-bg{
+	background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
+}
+/*---#featured i>css use here---*/
+#featured i{
+	font-size: 40px;
+	color:#0f6f0c;
+	display: inline-block;
+	line-height: 2;
+}
+/*---#featured h3,a & hover >css use here---*/
+#featured h3{
+	color: #fbfafa;
+	font-weight: bold;
+	font-size: 27px;
+	letter-spacing: 1px;
+}
+#featured h3 a{
+	color: #fbfafa;
+}
+#featured h3 a:hover{
+	color:#0f6f0c;
+	text-decoration: none;
+	transition: 1s;
+}
+/*---#featured p>css use here---*/
+#featured p{
+	color: #fbfafa;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	bottom: 0;
+}
+/*---Responsive design>css use here---*/
+@media(max-width: 786px){
+	/*---#featured>css-Responsive-design use here---*/
+	#banner {
+		height: 140vh;
+	}
+}
+/*===============================About-section start here=========================*/
+/*---#about>css use here---*/
+#about{
+	background-image: url(../img/map.png);
+	background-position: center;
+	background-size:cover;
+	background-attachment: fixed;
+	padding-bottom: 25px;
+}
+/*---card , card:hover i>css use here---*/
+.card{
+	margin: 10px 10px;
+}
+/*---pictuerIcon img>css use here---*/
+.pictuerIcon img{
+	width: 100%;
+	height: 220px;
+	position: relative;
+}
+/*---allIcon,i>css use here---*/
+.allIcon{
+	position: absolute;
+	margin: -16% 0 0 38%;
+}
+.allIcon i{
+	color: #fff;
+	padding: 17px 19px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	background: #229128;
+	transition: 2s;
+}
+/*---card , card:hover i>css use here---*/
+.card:hover i{
+	background-color:#fff; 
+	color: #229128;
+	transition: 2s;
+}
+/*---card-body .card-title a & hover use>css use here---*/
+.card-body .card-title a{
+	font-size: 28px;
+	font-weight: bold;
+	color: #000;
+}
+.card-body .card-title a:hover{
+	text-decoration: none;
+	color: #229128;
+}
+/*---card-body .card-text>css use here---*/
+.card-body .card-text{
+	text-align: center;
+}
+/*===============================Services-section start here=========================*/
+/*---#Services-Section>css use here---*/
+#Services-Section{
+	padding-bottom: 25px;
+}
+/*---icoh3pUse .sixIcon,i>css use here---*/
+.icoh3pUse .sixIcon{
+	margin-bottom: -37px;
+}
+.icoh3pUse .sixIcon i{
+	color: #3c663cde;
+}
+/*---icoh3pUse .min-title,a,hover use>css use here---*/
+.icoh3pUse .min-title{
+	margin-left: 55px;
+}
+.icoh3pUse .min-title a{
+	color: #000;
+	font-size: 25px;
+	font-weight: 1000;
+}
+.icoh3pUse .min-title a:hover{
+	text-decoration: none;
+	color: #3c663cde;
+}
+/*---icoh3pUse p>css use here---*/
+.icoh3pUse p{
+	margin-left: 55px;
+}
+/*===============================Call-To-Action start here=========================*/
+/*---#call-to-action>css use here---*/
+#call-to-action{
+	background-image: linear-gradient(#289672d1,#04573ce3),url(../img/call-to-action-bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*---twoTEdit ,h3,p>css use here---*/
+.twoTEdit{
+	padding: 50px 0 40px 0;
+
+}
+.twoTEdit h3{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-family: impact;
+	letter-spacing: 1px;
+	margin-bottom: 27px;
+}
+.twoTEdit p{
+	color: #e7e6ea;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+/*---Butt>css use here---*/
+.Butt{
+	text-align: center;
+	padding-bottom: 70px;
+}
+/*---Butt .BUTT & hover>css use here---*/
+.Butt .BUTT{
+	padding: 10px 30px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: 1000;
+	letter-spacing: 1px;
+	transition: 1s;
+}
+.Butt .BUTT:hover{
+	background-color: #119162;
+	color: #f4f0f0;
+	border: #119162; 
+	transition: 1s;
+}
+/*===============================Skills-section  start here=========================*/
+/*---skill-content>css use here---*/
+.skill-content{
+	margin: 20px 0 70px 0;
+}
+/*---progress>css use here---*/
+.progress{
+	height: 35px;
+	margin-bottom: 10px;
+}
+/*---skill ,val>css use here---*/
+.skill{
+	font-family: 'Open Sans',sans-serif;
+	padding: 0;
+	margin: 0 0 0 15px;
+	text-transform: uppercase;
+}
+.val{
+	float: right;
+	font-style: normal;
+	margin: 0 10px 0 0;
+}
+/*---progress-bar>css use here---*/
+.progress-bar{
+	width: 1px;
+	text-align: left;
+	transition: .9s;
+}
+/*===============================Facts-section start here=========================*/
+/*---#facts-section>css use here---*/
+#facts-section{
+	background-image: linear-gradient(#fff9,#ffffffd4),url(../img/facts-section-bg.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+/*---counters ,span,p>css use here---*/
+.counters{
+	padding: 10px 0 40px 0;
+}
+.counters span{
+	color: #119143d6;
+	font-family: impact;
+	font-size: 45px;
+	letter-spacing: 1px;
+}
+.counters p{
+	color: #141515;
+	font-size: 15px;
+	font-family: 'Open Sans',sans-serif;
+}
+/*---facts-image>css , Responsive-desing use here---*/
+.facts-image{
+	margin: 2% 0 0 12%;
+}
+/*---facts-image img>css,Responsive-design use here---*/
+.facts-image img{
+	margin-bottom: -40px;
+	opacity: 0.8;
+}
+/*---Responsive desing>css use here---*/
+@media(max-width: 1199px){
+	/*---facts-image img>css,Responsive-design use here---*/
+	.facts-image img{
+		width: 380px;
+		height: 500px;
+	}
+	/*---facts-image>css , Responsive-desing use here---*/
+	.facts-image{
+		margin-left:23px;
+	}
+}
+/*===============================Portfolio-section start here=========================*/
+/*---#Portfolio-section>css use here---*/
+#Portfolio-section{
+	background:#dcdef063;
+	padding-bottom: 60px;
+}
+/*---ul.filters,li,a & hover>css use here---*/
+ul.filters{
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 30px 0;
+}
+ul.filters li{
+	display: inline-block;
+}
+ul.filters li a{
+	display: block;
+	padding: 5px 10px;
+	color:#434e5e;
+}
+ul.filters li a:hover{
+	background-color: #e6e9ed;
+	text-decoration: none;
+	border-radius: 5px;
+}
+ul.filters li.active a{
+	color: #fff;
+	background-color: #28be78;
+	border-radius: 5px;
+}
+/*---single-portfolio img >css use here---*/
+.single-portfolio img{
+	width: 100%;
+}
+/*---single-portfolio & single-portfolio:hover .Portfolio-overlay>css use here---*/
+.single-portfolio{
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px 4px 0 0;
+}
+/*---Portfolio-overlay & before>css use here---*/
+.Portfolio-overlay{
+	position: absolute;
+	right: 0;
+	top:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	transition: .3s;
+}
+.Portfolio-overlay::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #333;
+	opacity: 0.5;
+	z-index: -1;
+}
+/*---single-portfolio & single-portfolio:hover .Portfolio-overlay>css use here---*/
+.single-portfolio:hover .Portfolio-overlay{
+	top: 0;
+}
+
+/*---twoIcon-s a i & hover>css use here---*/
+.twoIcon-s a i{
+	background-color: #fff;
+	color: #333;
+	padding: 10px;
+	border-radius: 50%;
+
+}
+.twoIcon-s a i:hover{
+	background-color:#28be78;
+	color: #fff;
+}
+/*---Portfolio-info & hover>css use here---*/
+.Portfolio-info{
+	text-align: center;
+	background: #ececec;
+	height: 95px;
+	padding: 14px;
+	border-radius: 0 0 4px 4px;
+	transition: .6s;
+}
+.Portfolio-info:hover{
+	box-shadow: 1px 2px 3px #666;
+}
+/*---Portfolio-info h4 ,a & hover>css use here---*/
+.Portfolio-info h4{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 2;
+}
+.Portfolio-info h4 a{
+	color:#2f312e; 
+}
+.Portfolio-info h4 a:hover{
+	color:#28be78;
+	text-decoration: none;
+}
+/*---Portfolio-info p>css use here---*/
+.Portfolio-info p{
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #586257;
+}
+/*=============================our clients-section start here========================*/
+/*---#our-clients-section .owl-carousel ,.owl-dot - active,.owl-dots>css use here---*/
+#our-clients-section .owl-carousel{
+	padding-bottom: 20px;
+}
+/*---#our-clients-section img ,hover >css use here---*/
+#our-clients-section img{
+	max-width: 100%;
+	padding: 10px 0;
+	opacity: 0.5;
+	transition: .3s;
+}
+#our-clients-section img:hover{
+	opacity: 1;
+}
+/*---#our-clients-section .owl-carousel ,.owl-dot - active,.owl-dots>css use here---*/
+#our-clients-section .owl-dot{
+	display: inline-block;
+	background-color:#ddd;
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	border-radius: 50%;
+}
+#our-clients-section .owl-dot.active{
+	background-color: #18d26e;
+}
+#our-clients-section .owl-dots{
+	margin-top: 5px;
+  	text-align: center;
+}
+/*=============================Testimonials-section start here========================*/
+/*---#Testimonials-section,owl-dot active,.owl-dots>css use here---*/
+#Testimonials-section{
+	background:#dcdef063;
+	
+}
+/*---#Testimonials-section .owl-carousel>css use here---*/
+#Testimonials-section .owl-carousel{
+	padding-bottom: 55px;
+}
+/*---#Testimonials-section .testimonial-item img>css use here---*/
+#Testimonials-section .testimonial-item img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	margin: 10px auto;
+}
+/*---Testimonials-section .testimonial-item,h3,h4,p>css use here---*/
+#Testimonials-section .testimonial-item{
+	margin: 25px 0;
+}
+#Testimonials-section .testimonial-item h3{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+#Testimonials-section .testimonial-item h4{
+	text-align: center;
+	color: #474848;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-bottom: 18px;
+}
+#Testimonials-section .testimonial-item p{
+	text-align: center;
+	color: #666;
+	letter-spacing: 1px;
+}
+/*---#Testimonials-section,owl-dot active,.owl-dots>css use here---*/
+#Testimonials-section .owl-dot{
+	display: inline-block;
+	background-color:#ddd;
+	height: 12px;
+	width: 12px;
+	margin: 0 5px;
+	border-radius: 50%;
+}
+#Testimonials-section .owl-dot.active{
+	background:#18d26e; 
+}
+#Testimonials-section .owl-dots{
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*=============================Team-section start here========================*/
+/*---team-area>css use here---*/
+.team-area{
+	padding-bottom: 65px;
+	margin-top: 20px;
+}
+/*---single-team img>css use here---*/
+.single-team img{
+	width: 100%;
+	height: 300px;
+}
+/*---single-team & single-team:hover .team-overlay>css,Responsive design use here---*/
+.single-team{
+	position: relative;
+	overflow: hidden;
+}
+/*---team-overlay & before>css use here---*/
+.team-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 100%;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 2;
+	transition: .8s;
+}
+.team-overlay::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #0a0b0b;
+	bottom: 0;
+	left: 0;
+	opacity: 0.3;
+	z-index: -1;
+}
+/*---single-team & single-team:hover .team-overlay>css use here---*/
+.single-team:hover .team-overlay{
+	bottom:0;
+}
+/*---team-overlay h4,p>css use here---*/
+.team-overlay h4{
+	color: #fff;
+	font-weight: bold;
+}
+.team-overlay p{
+	color: #fff;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 8px;
+}
+/*---justIcon a i & hover>css use here---*/
+.justIcon a i{
+	color: #fff;
+	margin: 2px;
+	font-size: 20px;
+}
+.justIcon a i:hover{
+	color:#28be78; 
+}
+/*---Responsive design>css use here---*/
+@media(max-width: 768px){
+	/*---single-team >css,Responsive design use here---*/
+	.single-team{
+		margin-top: 25px
+	}
+}
+/*=============================Contact us-section start here========================*/
+/*---#contact-us>css use here---*/
+#contact-us{
+	background: #dcdef063;
+	padding-bottom:50px ;
+}
+/*---contact-info ,i,h3>css use here---*/
+.contact-info{
+	padding:20px 0 30px 0;
+	text-align: center;
+}
+.contact-info i{
+	font-size: 30px;
+	margin-bottom: 30px;
+	color:#28be78;
+}
+.contact-info h3{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #737475;
+	margin-bottom: 10px;
+}
+/*---contact-info address>css ,Responsive design use here---*/
+.contact-info address{
+	font-size: 15px;
+	font-family: 'Open Sans',sans-serif;
+}
+/*---contact-info p a & hover>css use here---*/
+.contact-info p a{
+	color: #000;
+}
+.contact-info p a:hover{
+	color:#28be78;
+	text-decoration: none;
+}
+/*---Responsive design>css use here---*/
+@media(min-width: 768px){
+	/*---#contact-us .contact-phone>css,Responsive design use here---*/
+	#contact-us .contact-phone{
+		border-left:1px solid #c4c3c3;
+		border-right:1px solid #c4c3c3;
+	}
+}
+/*---Responsive design>css use here---*/
+@media(max-width: 768px){
+	.contact-addreass{
+		padding: 20px 0;
+	}
+	.contact-phone{
+		padding: 20px 0;
+	}
+	/*---.contact-gmail>css,Responsive design use here---*/
+	.contact-gmail{
+		padding: 20px 0;
+	}
+}
+/*---#contact-us .form-area>css ,Responsive design use here---*/
+#contact-us .form-area{
+	width: 100%;
+	padding: 50px;
+	background: #e8e8f0de;
+	box-shadow: 2px 3px 8px #bfbdbd;
+}
+/*---Responsive design>css use here---*/
+@media(max-width: 768px){
+	/*---#contact-us .form-area>css,Responsive design use here---*/
+	#contact-us .form-area {
+		width: 90%;
+		margin-left: 20px;
+	}
+}
+/*---text-center button & hover>css use here---*/
+#contact-us button{
+	color: #fff;
+	background: #18d26e;
+	border: #18d26e;
+	padding: 10px 40px;
+	font-family: 'Open sans',sans-serif; 
+	margin-top: 10px;
+}
+#contact-us button:hover{
+	background:#06793b;
+}
+/*form-validate.js> required color css use here*/
+.error {
+	color: #f73434;
+	font-size: 15px;
+	
+}
+
+/*=============================Footer-section start here========================*/
+/*---#footer-section>css use here---*/
+#footer-section{
+	background:#373636;
+}
+/*---footer-area>css use here---*/
+.footer-area{
+	padding: 50px 0 50px 0;
+}
+/*---minHead-footer>css use here---*/
+.minHead-footer{
+	padding-bottom:20px; 
+}
+/*---minHead-footer h4 ,before ,after>css use here---*/
+.minHead-footer h4{
+	font-size: 15px;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+.minHead-footer h4::before{
+	position: absolute;
+	content: '';
+	display: block;
+	width:  300px;
+	height: 2px;
+	background:#aaa;
+	bottom: -7px;
+
+}
+.minHead-footer h4::after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100px;
+	height: 2px;
+	background: #1a1;
+	bottom: -7px;
+}
+/*---footer-links ul li a & hover>css use here---*/
+.footer-links ul li a{
+	color: #fff;
+}
+.footer-links ul li {
+	list-style-type: none;
+	margin: 0 48px 0 -40px;
+	border-bottom: 1px solid #8c8a8a;
+	padding: 7px 0;
+}
+.footer-links ul li a:hover{
+	color: #18ac13;
+	text-decoration: none;
+}
+.footer-links ul li i{
+	color: #bdbcbc;
+	padding-right: 10px;
+}
+/*---footer-contact p>css use here---*/
+.footer-contact p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+}
+/*---social-links a i & hover>css use here---*/
+.social-links a i{
+	background: #8a8787;
+	padding: 10px;
+	border-radius: 50%;
+	color: #fff;
+	margin-right: 5px;
+}
+.social-links a i:hover{
+	background:#1a1; 
+}
+/*---footer-newsletter p>css use here---*/
+.footer-newsletter p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 30px;
+}
+/*---footer-newsletter form input ,#btnn>css use here---*/
+.footer-newsletter form input{
+	height: 40px;
+	padding-left: 5px;
+	border: #fff;
+}
+
+.footer-newsletter form #btnn{
+	background: #4ecc67;
+	border:#4ecc67;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 15px;
+	margin-left: -1px;
+}
+/*---Responsive design>css use here---*/
+@media(max-width: 768px){
+	/*---footer-contact>css,Responsive design use here---*/
+	.footer-contact{
+		padding-top: 30px;
+	}
+	/*---footer-newsletter>css,Responsive design use here---*/
+	.footer-newsletter{
+		padding-top: 30px;
+	}
+}
+/*---copyright-are>css use here---*/
+.copyright-area{
+	background:#000;
+	text-align: center;
+	padding: 20px 0;
+}
+/*---copyright-area .copyright span>css use here---*/
+.copyright-area .copyright span{
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+/*---copyright-area .credits span,a & hover>css use here---*/
+.copyright-area .credits span{
+	color: #fff;
+	font-size: 13px;
+}
+.copyright-area .credits span a{
+	color: #0cb556;
+	font-weight: bold;
+	font-size: 13px;
+}
+.copyright-area .credits span a:hover{
+	text-decoration: none;
+}
+/*=============================Footer-section end here========================*/
+
+/*============================Scrolltop plugin css use start here=======================*/
+/*---#back-to-up ,i>css ,js use here---*/
+#back-to-up{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	background: #35b75c;
+	color: #f8fbf8;
+	line-height: 50px;
+	border-radius: 50%;
+	transition: background 0.5s;
+	z-index: 11;
+	
+}
+#scrolltop i{
+  color: #fff;
+}
+/*============================Scrolltop plugin css use end here=======================*/
